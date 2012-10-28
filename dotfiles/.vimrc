@@ -1,10 +1,8 @@
 syntax on
-"" i hate euc
 
 hi Comment ctermfg=5 cterm=NONE
 set backspace=indent,eol,start
 set hidden
-set history=50
 set hlsearch
 set ignorecase
 set incsearch
