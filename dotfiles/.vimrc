@@ -1,4 +1,5 @@
 syntax on
+colorscheme torte
 
 hi Comment ctermfg=5 cterm=NONE
 set backspace=indent,eol,start
@@ -12,7 +13,7 @@ set showmatch
 set smartcase
 set wrapscan
 set autoindent
-set pastetoggle=<F11>
+set pastetoggle=<F4>
 set vb t_vb=
 
 set textwidth=98
@@ -34,6 +35,13 @@ set history=200
 
 set laststatus=2
 set statusline=%<%f\ %m%r%h%w[%{(&fenc!=''?&fenc:&enc).','.&ff}%Y]%=*%n\ %l,%c\ %P
+
+" wrap text but prevent vim from inserting linebreaks 
+set wrap
+set linebreak
+set nolist
+set textwidth=0
+set wrapmargin=0
 
 " perlhack5
 set iskeyword+=:
