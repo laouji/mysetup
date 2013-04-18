@@ -16,7 +16,6 @@ set autoindent
 set pastetoggle=<F4>
 set vb t_vb=
 
-set textwidth=98
 set tabstop=4
 set expandtab
 set shiftwidth=4
