@@ -44,6 +44,14 @@ nnoremap <silent> ]b :bnext<CR>
 nnoremap <silent> [B :bfirst<CR>
 nnoremap <silent> ]B :blast<CR>
 
+"vimrc Insert mode でCtrl + hjkl 移動
+inoremap <C-L>  <C-O>l
+inoremap <C-H>  <C-O>h
+inoremap <C-J>  <C-O>j
+inoremap <C-K>  <C-O>k
+inoremap <C-Y>  <C-O>y
+inoremap <C-U>  <C-O>u
+
 " perl mapping
 map <F1> O#!/usr/local/bin/perl<CR><ESC>iuse strict;<CR><ESC>iuse warnings;<CR>
 vmap ,; :s/^/#/<CR>:noh<CR>
