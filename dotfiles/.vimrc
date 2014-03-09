@@ -16,9 +16,9 @@ set autoindent
 set pastetoggle=<F4>
 set vb t_vb=
 
-set tabstop=4
+set tabstop=2
 set expandtab
-set shiftwidth=4
+set shiftwidth=2
 set shiftround
 
 set encoding=utf-8
@@ -60,11 +60,14 @@ inoremap <C-Y>  <C-O>y
 inoremap <C-U>  <C-O>u
 
 " perl mapping
-map <F1> O#!/usr/local/bin/perl<CR><ESC>iuse strict;<CR><ESC>iuse warnings;<CR>
+map <F1> O#!/usr/bin/env perl<CR><ESC>iuse strict;<CR><ESC>iuse warnings;<CR>
 vmap ,; :s/^/#/<CR>:noh<CR>
 vmap ,cl :s/^#//<CR>:noh<CR>
 imap ,dumper  use Data::Dumper; warn Dumper(  );<ESC>F;a<Return><ESC>f(la
-:imap dumpa <ESC>^iwarn Data::Dumper->Dump([\<ESC>llyw$a], ['<ESC>pa']);<ESC>
+
+" lua mapping
+vmap ,- s:/^/--/<CR>:noh<CR>
+vmap ,c- s:/^--//<CR>:noh<CR>
 
 " html mapping
 imap ,div <div></div><ESC>2ba
@@ -72,3 +75,9 @@ imap ,ahre <a href=""></a><ESC>F"i
 
 " xslate mapping
 imap ,loc [% loc('') %]<ESC>F'i 
+
+map <F3> :!/Applications/CoronaSDK/Corona\ Terminal -project %:p -skin iPhone<CR>
+
+"Session support. Save Session As and Session Open.
+nmap SSA :wa<CR>:mksession! ~/.vimSessions/
+nmap SO :wa<CR>:so ~/.vimSessions
