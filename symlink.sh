@@ -1,6 +1,6 @@
 #!/bin/sh 
 
-cd mysetup/dotfiles
-for dotfile in .?*; do
+cd ./dotfiles
+for dotfile in .?[a-z]*; do
     ln -Fis "$PWD/$dotfile" $HOME
 done
