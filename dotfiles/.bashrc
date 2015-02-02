@@ -13,7 +13,3 @@ if [[ "$uname_str" == 'Darwin' ]]; then
     PS1="${GREEN}\u@\h${YELLOW} \A \w${RED} \$(__git_ps1) ${BLUE}\$\[\033[00m\] "
 fi
 
-# Android
-export ANDROID_SDK_ROOT="$HOME/dev/android-sdk-macosx";
-export ANDROID_SDK_PLATFORM_TOOLS="$ANDROID_SDK_ROOT/tools";
-export ANDROID_NDK_ROOT="$HOME/dev/android-ndk-r8e";

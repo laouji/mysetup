@@ -1,5 +1,7 @@
 syntax on
-colorscheme torte
+:autocmd ColorScheme * highlight ExtraWhitespace ctermbg=blue guibg=blue
+colorscheme slate
+:match ExtraWhitespace /\s\+$/
 
 hi Comment ctermfg=5 cterm=NONE
 set backspace=indent,eol,start
