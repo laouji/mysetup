@@ -1,6 +1,12 @@
 syntax on
 colorscheme torte
 
+source ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim
+call pathogen#infect()
+
+filetype plugin on
+let g:go_disable_autoinstall = 0
+
 hi Comment ctermfg=5 cterm=NONE
 set backspace=indent,eol,start
 set hidden
