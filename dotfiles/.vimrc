@@ -1,5 +1,7 @@
 syntax on
-colorscheme torte
+:autocmd ColorScheme * highlight ExtraWhitespace ctermbg=blue guibg=blue
+colorscheme slate
+:match ExtraWhitespace /\s\+$/
 
 source ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
