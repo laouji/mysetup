@@ -1,6 +1,7 @@
 syntax on
+:set background=dark
 :autocmd ColorScheme * highlight ExtraWhitespace ctermbg=blue guibg=blue
-colorscheme slate
+colorscheme candycode
 :match ExtraWhitespace /\s\+$/
 
 source ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim
