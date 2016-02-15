@@ -10,3 +10,11 @@ GREEN="\[\033[0;32m\]"
 BLUE="\[\033[01;34m\]"
 
 PS1="${GREEN}\u@\h${YELLOW} \A \w${RED} \$(__git_ps1) ${BLUE}\$\[\033[00m\] "
+
+LS_OPTION="--color"
+
+if [[ "$uname_str" == 'Darwin' ]]; then
+    LS_OPTION="-G"
+fi
+
+alias ll="ls -l ${LS_OPTION}" 2>/dev/null
