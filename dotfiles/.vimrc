@@ -90,3 +90,13 @@ map <F3> :!/Applications/CoronaSDK/Corona\ Terminal -project %:p -skin iPhone<CR
 "Session support. Save Session As and Session Open.
 nmap SSA :wa<CR>:mksession! ~/.vimSessions/
 nmap SO :wa<CR>:so ~/.vimSessions
+
+"Usage: :let g:S=0
+" :%s/\d\+/\=Sum(submatch(0))/g
+" :echo g:S
+
+let g:S = 0 "result in global variable S
+function! Sum(number)
+  let g:S = g:S + a:number
+  return a:number
+endfunction
