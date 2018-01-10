@@ -22,7 +22,7 @@ set showmatch
 set smartcase
 set wrapscan
 set autoindent
-set pastetoggle=<F4>
+set pastetoggle=<F5>
 set vb t_vb=
 
 set tabstop=2
@@ -100,3 +100,9 @@ function! Sum(number)
   let g:S = g:S + a:number
   return a:number
 endfunction
+
+if has("persistent_undo")
+  set swapfile directory=~/.vimtemp/swap//
+  set backup backupdir=~/.vimtemp/backup//
+  set undofile undodir=~/.vimtemp/undo//
+endif
