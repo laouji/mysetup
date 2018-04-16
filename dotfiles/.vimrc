@@ -1,11 +1,13 @@
 syntax on
-:set background=dark
+set background=dark
 :autocmd ColorScheme * highlight ExtraWhitespace ctermbg=blue guibg=blue
-colorscheme candycode
-:match ExtraWhitespace /\s\+$/
 
 source ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
+
+set termguicolors
+colorscheme candycode
+:match ExtraWhitespace /\s\+$/
 
 filetype plugin on
 let g:go_disable_autoinstall = 0
