@@ -33,7 +33,7 @@ set shiftround
 set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=utf-8\,gk2312\,gbk\,gb18030,ucs-bom\,prc
-set termencoding=utf-8set
+set termencoding=utf-8
 set guifont=Monaco\ h11
 set guifontwide=NSimsun\ h12
 
