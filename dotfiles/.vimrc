@@ -34,7 +34,7 @@ set shiftround
 
 set encoding=utf-8
 set fileencoding=utf-8
-set fileencodings=utf-8\,gk2312\,gbk\,gb18030,ucs-bom\,prc
+set fileencodings=utf-8\,gk2312\,gbk\,gb18030,ucs-bom\,prc\,euc-kr\,cp949
 set termencoding=utf-8
 set guifont=Monaco\ h11
 set guifontwide=NSimsun\ h12
@@ -104,7 +104,5 @@ function! Sum(number)
 endfunction
 
 if has("persistent_undo")
-  set swapfile directory=~/.vimtemp/swap//
   set backup backupdir=~/.vimtemp/backup//
-  set undofile undodir=~/.vimtemp/undo//
 endif
