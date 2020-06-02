@@ -18,6 +18,6 @@ for folder in "swap" "backup" "undo"; do
   mkdir -p ~/.vimtemp/$folder/
 done;
 
-mkdir ~/.bash_completion.d
+mkdir ~/.shell_completion.d
 curl "https://raw.githubusercontent.com/rupa/z/master/{z.sh}" \
-    -o ~/.bash_completion.d/"#1"
+    -o ~/.shell_completion.d/"#1"

@@ -22,8 +22,8 @@ alias ll="ls -l ${LS_OPTION}" 2>/dev/null
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-if [ -d ~/.bash_completion.d ]; then
-  for file in ~/.bash_completion.d/*; do
+if [ -d ~/.shell_completion.d ]; then
+  for file in ~/.shell_completion.d/*; do
     . $file
   done
 fi
