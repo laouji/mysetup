@@ -70,6 +70,9 @@ inoremap <C-K>  <C-O>k
 inoremap <C-Y>  <C-O>y
 inoremap <C-U>  <C-O>u
 
+"vim-go omni completion while in insert mode
+inoremap <C-b>  <C-x><C-o>
+
 " perl mapping
 map <F1> O#!/usr/bin/env perl<CR><ESC>iuse strict;<CR><ESC>iuse warnings;<CR>
 vmap ,; :s/^/#/<CR>:noh<CR>
