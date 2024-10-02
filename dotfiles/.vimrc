@@ -73,6 +73,15 @@ inoremap <C-U>  <C-O>u
 "vim-go omni completion while in insert mode
 inoremap <C-b>  <C-x><C-o>
 
+" go stuff
+imap ,errf  fmt.Errorf("", err)<ESC>F"i
+imap ,logf  log.Printf("%+v", )<ESC>F i
+imap ,for  for i := 0; i < ; i ++ {<Return>}<ESC>kF;i
+imap ,itr  <ESC>^ifor i, val := range <ESC>$a {<Return>}<ESC>k$F i
+imap ,struc  type M struct {}<ESC>F{a<Return><ESC>k0fM
+imap ,func  func <ESC>$a() {<Return>}<ESC>k0f(a
+imap ,meth  func (m *<ESC>$a) Fn() {<Return>}<ESC>k0fF
+
 " perl mapping
 map <F1> O#!/usr/bin/env perl<CR><ESC>iuse strict;<CR><ESC>iuse warnings;<CR>
 vmap ,; :s/^/#/<CR>:noh<CR>
